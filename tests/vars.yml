@@ -1,6 +1,6 @@
 postgresql_databases:
-  - name: testdb
+  - name: test
 
 postgresql_users:
-  - name: user1
-    pass: pass1
+  - name: test
+    pass: test
