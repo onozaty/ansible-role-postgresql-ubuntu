@@ -6,6 +6,7 @@
     name: '{{ item.name }}'
     password: '{{ item.pass }}'
     encrypted: '{{ item.encrypted | default(omit) }}'
+    role_attr_flags: '{{ item.role_attr_flags | default(omit) }}'
     state: present
   with_items: '{{postgresql_users}}'
   when: postgresql_users|length > 0
