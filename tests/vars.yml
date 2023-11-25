@@ -1,5 +1,6 @@
 postgresql_databases:
   - name: test
+    owner: test
 
 postgresql_users:
   - name: test
